@@ -1,31 +1,57 @@
 class Calculator:
-    num1 = int(input("What is your first number you would like me to calculate?(not a decimal)"))
-    num2 = int(input("What is your second number you would like me to calculate?(not a decimal)"))
-    calculation = input("How would you like me to calculate this?")
-
-    def add():
-        if calculation in ["+", "add", "addition"]:
-        answer = num1 + num2
-        print(answer)
-    def subtraction():
-        if calculation in ["-", "subtract", "subtraction"]:
-        answer = num1 - num2
     
-    def divide():
-        if calculation in ["/", "divide", "division"]:
-            answer = num1 * num2
-            print(answer)
+    def add(self, a, b):
+        if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
+            raise Exception()
+        return a+b
+
+    def subtract(self, a,b):
+        if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
+            raise Exception()
+        return a-b
+
+    def divide(self, a,b):
+        if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
+            raise Exception()
+        return a/b
+
+    def multiply(self, a,b):
+        if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
+            raise Exception()
+        return a*b
+
+
+
+
+class Calculator User:
+    def __init__(self):
+        self.cal = Calculator()
+
+    def add(self,a,b):
+        try:
+            return self.cal.add(a,b)
+        except:
+            print("Wrong arguments passed to add")
     
-    def multiply():
-        if calculation in ["*", "multiply", "multiplication"]:
-            answer = num1 / num2
-        print(answer)
+    def subtract(self,a,b):
+        try:
+            return self.cal.subtract(a,b)
+        except:
+            print("Wrong arguments passed to subtract")
+
+    def divide(self,a,b):
+        try:
+            return self.cal.divide(a,b)
+        except:
+            print("Wrong arguments passed to divide")
+
+    def multiply(self,a,b):
+        try:
+            return self.cal.multiply(a,b)
+        except:
+            print("Wrong arguments passed to multiply")
+
     
-    
 
 
     
-
-
-
-    add()
