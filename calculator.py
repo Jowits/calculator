@@ -16,6 +16,11 @@ class Calculator:
             answer = num1 * num2
             print(answer)
     
+    def multiply():
+        if calculation in ["*", "multiply", "multiplication"]:
+            answer = num1 / num2
+        print(answer)
+    
     
 
 
