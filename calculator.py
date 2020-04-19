@@ -1,20 +1,20 @@
 class Calculator:
-    
+    ## add method
     def add(self, a, b):
         if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
             raise Exception()
         return a+b
-
+    ## subtract method
     def subtract(self, a,b):
         if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
             raise Exception()
         return a-b
-
+    ## divide method
     def divide(self, a,b):
         if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
             raise Exception()
         return a/b
-
+    ##multiply method
     def multiply(self, a,b):
         if not (isinstance(a,(int, float))) and (isinstance(b,(int, float)))):
             raise Exception()
