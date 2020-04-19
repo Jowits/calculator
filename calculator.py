@@ -22,7 +22,7 @@ class Calculator:
 
 
 
-
+## calculator class
 class Calculator User:
     def __init__(self):
         self.cal = Calculator()
@@ -31,13 +31,13 @@ class Calculator User:
         try:
             return self.cal.add(a,b)
         except:
-            print("Wrong arguments passed to add")
+            print("Wrong arguments was passed to add")
     
     def subtract(self,a,b):
         try:
             return self.cal.subtract(a,b)
         except:
-            print("Wrong arguments passed to subtract")
+            print("Wrong arguments was passed to subtract")
 
     def divide(self,a,b):
         try:
